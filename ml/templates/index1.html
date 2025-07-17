@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herb Finder</title>
+    
+    
+    <div class="overlay"></div> <!-- Add overlay -->
+    <div class="container">
+        <h1 style="font-family:Roboto">Find the Right Ayurvedic Herb</h1>
+        <form action="/predict" method="post" id="herb-form">
+            <input type="text" name="symptoms" placeholder="Enter symptoms..." required>
+            <button type="submit">Find Herb</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-image: url('https://images.pexels.com/photos/19111993/pexels-photo-19111993/free-photo-of-autumn-leaves-on-green-leaves-on-ground.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    backdrop-filter: blur(1.6px);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+form {
+    background-color: rgb(0 0 0 / 54%);
+    padding: 20px;
+    margin-bottom: 20px ;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: center;
+}
+
+label {
+    font-size: 1.2em;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    width: calc(100% - 20px);
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1.1em;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+    </style>
+    
+</head>
+<body>
+   
+
+    <script>
+        document.getElementById("herb-form").onsubmit = async function(event) {
+            event.preventDefault();
+            const formData = new FormData(this);
+            const response = await fetch('/predict', {
+                method: 'POST',
+                body: formData
+            });
+            const data = await response.json();
+            document.getElementById("result").innerHTML = `Recommended Herb Plant : ${data.herb}`;
+        };
+    </script>
+</body>
+</html>

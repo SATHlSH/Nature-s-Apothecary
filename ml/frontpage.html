@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Herbal Garden</title>
+    <link rel="stylesheet" href="C:\Users\Santina Appalo\OneDrive\Desktop\Projects\AYUSH_GARDEN\Page1\styles.css">
+    <div class="slider-container">
+        <div class="slide fade">
+          <img class="slide-image" src="https://images.pexels.com/photos/19805965/pexels-photo-19805965/free-photo-of-shrubs-of-coniferous-trees.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+          <div class="slide-content">
+            <h3 class="slide-title">AYURVEDA</h3>
+            <p class="slide-desc">
+                "Unlock the ancient wisdom of Ayurveda: Balance, Heal, Thrive."
+            </p>
+            <script>
+              function redirectToAyurvedha() {
+                  window.location.href = "C:\Users\Santina Appalo\OneDrive\Desktop\Projects\AYUSH_GARDEN\Final\ayurveda.html";  // Replace with the path to your HTML file
+              }
+          </script>
+            <p class="slide-btn">
+                <button id="Ayurveda" type="button" onclick="redirectToAyurvedha()">ENTER <ion-icon name="arrow-forward-circle"></ion-icon></button>
+            </p>
+          </div>
+          <div class="slide-number-container">
+            <p class="slider-number">1 /</p>
+            
+            <p class="slider-number">5</p>
+          </div>
+        </div>
+      
+        <div class="slide fade">
+          <img class="slide-image" src="https://images.pexels.com/photos/5987947/pexels-photo-5987947.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+          <div class="slide-content">
+            <h3 class="slide-title">UNANI</h3>
+            <p class="slide-desc">
+                "Unani medicine blends ancient wisdom with nature's remedies to restore health and balance. Embrace a holistic approach to wellness rooted in tradition."
+            </p>
+            <p class="slide-btn">
+                <button id="Unani" type="button">ENTER <ion-icon name="arrow-forward-circle"></ion-icon></button>
+          </div>
+          <div class="slide-number-container">
+            <p class="slider-number">2 / </p>
+            
+            <p class="slider-number">5</p>
+          </div>
+        </div>
+      
+        <div class="slide fade">
+          <img class="slide-image" src="https://images.pexels.com/photos/15725414/pexels-photo-15725414/free-photo-of-leaves-of-a-mint-plant.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+          <div class="slide-content">
+            <h3 class="slide-title">SIDDHA</h3>
+            <p class="slide-desc">
+              "The ancient art of healing through nature and spiritual balance. Discover wellness through time-tested remedies and inner harmony."
+
+            </p>
+            <p class="slide-btn">
+                <button id="siddha" type="button">ENTER <ion-icon name="arrow-forward-circle"></ion-icon></button>
+              
+            </p>
+          </div>
+          <div class="slide-number-container">
+            <p class="slider-number">3 /</p>
+            
+            <p class="slider-number">5</p>
+          </div>
+        </div>
+        <div class="slide fade">
+            <img class="slide-image" src="https://images.pexels.com/photos/9112558/pexels-photo-9112558.jpeg?auto=compress&cs=tinysrgb&w=600">
+            <div class="slide-content">
+              <h3 class="slide-title">HOMEOPATHY</h3>
+              <p class="slide-desc">
+                "Gentle, natural healing that stimulates the body's own defenses. Restore balance with remedies tailored to your unique needs."
+              </p>
+              <p  class="slide-btn">
+                <button id="homeopathy" type="button">ENTER <ion-icon name="arrow-forward-circle"></ion-icon></button>
+              </p>
+            </div>
+            <div class="slide-number-container">
+              <p class="slider-number">4 /</p>
+              
+              <p class="slider-number">5</p>
+            </div>
+          </div>
+           <!-- Next and previous buttons -->
+        <div class="slider-nav">
+            <a class="slider-nav-btn" onclick="plusSlides(-1)">
+              <ion-icon name="caret-back-outline"></ion-icon>
+            </a>
+            <a class="slider-nav-btn" onclick="plusSlides(1)">
+              <ion-icon name="caret-forward-outline"></ion-icon>
+            </a>
+          </div>
+          
+          <div class="slide fade">
+            <img class="slide-image" src="https://images.pexels.com/photos/10939343/pexels-photo-10939343.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+            <div class="slide-content">
+              <h3 class="slide-title">NATUROPATHY</h3>
+              <p class="slide-desc">
+                Harness the power of nature to heal and rejuvenate. Embrace a holistic approach to wellness through natural therapies and lifestyle."
+              </p>
+              <p class="slide-btn">
+                <button id="naturopathy" type="button">ENTER <ion-icon name="arrow-forward-circle"></ion-icon></button>
+              </p>
+            </div>
+            <div class="slide-number-container">
+              <p class="slider-number">5 /</p>
+              
+              <p class="slider-number">5</p>
+            </div>
+          
+            
+      
+        <!-- Next and previous buttons -->
+        <div class="slider-nav">
+          <a class="slider-nav-btn" onclick="plusSlides(-1)">
+            <ion-icon name="caret-back-outline"></ion-icon>
+          </a>
+          <a class="slider-nav-btn" onclick="plusSlides(1)">
+            <ion-icon name="caret-forward-outline"></ion-icon>
+          </a>
+        </div>
+      
+        <!-- The dots/circles -->
+        <div class="dot-container">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
+      </div>
+      
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto;
+  text-decoration: none;
+}
+
+.slider-container {
+  width: 100%;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  display: none;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.slide-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  text-align: center;
+  padding: 1rem;
+}
+.slide-title {
+  width: 100%;
+  max-width: 50rem;
+  color: white;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.slide-desc {
+  width: 100%;
+  max-width: 50rem;
+  color: lightgray;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.slide-btn button {
+    color: black;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0.7rem;
+    border-radius: 0.3rem;
+    padding:0.2rem 0.7rem ;
+    text-transform: capitalize;
+    transition: ease 0.3s;
+    border: none;
+    cursor: pointer;
+}
+.slide-btn button:hover {
+ 
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.slide-number-container {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 5;
+  font-size: 1rem;
+  display: flex;
+  gap: 0.3rem;
+  align-items: center;
+  color: rgba(211, 211, 211, 0.788);
+  letter-spacing: 0.2rem;
+}
+.slide-number-container hr {
+  width: 3rem;
+  transform: rotate(130deg);
+  border-color: rgba(211, 211, 211, 0.788);
+}
+
+.slider-nav {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1rem;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+  
+.slider-nav-btn {
+  cursor: pointer;
+  background-color: rgba(211, 211, 211, 0.226);
+  color: white;
+  font-size: 0.7rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: ease 0.3s;
+}
+.slider-nav-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.dot-container {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0;
+  z-index: 4;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.dot {
+  cursor: pointer;
+  height: 0.3rem;
+  width: 0.3rem;
+  background-color: rgba(211, 211, 211, 0.226);
+  border-radius: 50%;
+  display: inline-block;
+  transition: ease 0.3s;
+}
+.active,
+.dot:hover {
+  background-color: white;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+.button-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+}
+
+.image-button img {
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+}
+
+
+@keyframes fade {
+  from {
+    opacity: 0.8;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+      </style>
+</head>
+<body>
+    <div class="background-container"></div>
+        <!-- Your background image or content -->
+        <div class="button-container">
+          <a href="http://127.0.0.1:5000" class="image-button">
+            <img src="https://img.icons8.com/?size=100&id=Jy13EnFGvQ1z&format=png&color=FFFFFF" alt="Download Output" class="button-image">
+        </a> 
+        
+      </div>
+    </div>
+    
+    <script>
+        let slideIndex = 1;
+const slides = document.getElementsByClassName("slide");
+const dots = document.getElementsByClassName("dot");
+
+// Function to show a specific slide
+function showSlides(n) {
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+
+  // Hide all slides
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  // Remove the "active" class from all dots
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  // Display the current slide and mark its corresponding dot as active
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
+
+// Function to advance to the next slide
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+// Function to navigate to a specific slide
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+// Automatically advance to the next slide every 3 seconds (3000 milliseconds)
+setInterval(function () {
+  plusSlides(1);
+}, 5000);
+
+// Initialize the slider
+showSlides(slideIndex);
+document.getElementById("Ayurveda").onclick=function(){
+    window.location.href="http://127.0.0.1:5500/ml/ayurveda.html";
+}
+document.getElementById("siddha").onclick=function(){
+    window.location.href="http://127.0.0.1:5500/ml/siddha.html";
+}
+document.getElementById("naturopathy").onclick=function(){
+    window.location.href="http://127.0.0.1:5500/ml/naturopathy.html";
+}
+document.getElementById("Unani").onclick=function(){
+    window.location.href="http://127.0.0.1:5500/ml/unani.html";
+}
+document.getElementById("homeopathy").onclick=function(){
+    window.location.href="http://127.0.0.1:5500/ml/homeopathy.html";
+}
+    </script>
+    
+</body>
+</html>
