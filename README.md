@@ -50,10 +50,10 @@ natures-apothecary/
  cd natures-apothecary</pre>
 
 ### Install dependencies
- npm install
+<pre> npm install </pre>
 
 ### Run the development server
-npm run dev
+<pre> npm run dev </pre>
 
 ---
 
