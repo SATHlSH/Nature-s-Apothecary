@@ -9,17 +9,19 @@ technology, and design for an engaging educational experience.
 
 
 # Features
--Interactive 3D Models – Rotate, zoom, and explore plant structures
--Therapeutic Information – Learn about traditional and modern medicinal uses
--Intuitive Navigation – Smooth transitions between plants and categories
--Cross-platform – Works on desktops, tablets, and mobile browsers
+- Interactive 3D Models – Rotate, zoom, and explore plant structures
+- Therapeutic Information – Learn about traditional and modern medicinal uses
+- Intuitive Navigation – Smooth transitions between plants and categories
+- Cross-platform – Works on desktops, tablets, and mobile browsers
+  
+---
 
 # Tech Stack
-Frontend: React.js, Three.js, Tailwind CSS
-3D Rendering: Blender (for modeling), Three.js (for rendering)
-Backend: Node.js, Express (if applicable)
-Data: JSON/REST API with plant metadata
-Hosting: GitHub Pages / Vercel / Netlify
+- Frontend: React.js, Three.js, Tailwind CSS
+- 3D Rendering: Blender (for modeling), Three.js (for rendering)
+- Backend: Node.js, Express (if applicable)
+- Data: JSON/REST API with plant metadata
+- Hosting: GitHub Pages / Vercel / Netlify
 
 ---
 
@@ -48,10 +50,10 @@ natures-apothecary/
  cd natures-apothecary</pre>
 
 ### Install dependencies
-    <pre>npm install</pre>
+ npm install
 
 ### Run the development server
-<pre>npm run dev</pre>
+npm run dev
 
 ---
 
