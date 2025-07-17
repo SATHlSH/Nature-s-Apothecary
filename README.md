@@ -19,3 +19,13 @@ _Add screenshots here if you have any_
 
 ## 📄 License
 MIT
+
+
+## Project Structure
+alzheimers-app/
+├── model/                # Trained model files (.h5 or .pkl)
+├── templates/            # HTML files
+├── static/               # CSS and JS
+├── app.py                # Flask/Streamlit backend
+├── requirements.txt      # Python dependencies
+└── README.md             # Project documentation
